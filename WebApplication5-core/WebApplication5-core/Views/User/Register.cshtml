@@ -1,0 +1,109 @@
+﻿@using WebApplication5_core.Models
+@model Registeration
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+
+    <link href="~/css/Register.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+
+
+
+
+<section class="containerr">
+
+    <div class="head">Sign up</div>
+
+
+    <form  method="post" asp-controller="User" asp-action="Register">
+
+        <div class="card-details">
+
+            <div class="cardbox">
+                <label class="labell"> Firstname</label>
+                <input placeholder="Enter Your First Name" required asp-for="Firstname" />
+            </div>
+
+            <div class="cardbox">
+                <label class="labell">Lastname</label>
+                <input placeholder="Enter Your Last Name"  required asp-for="Lastname" />
+            </div>
+            <div class="cardbox">
+                <label class="labell">Email</label>
+                <input placeholder="Enter Your Email" required name="Email" type="email" />
+            </div>
+
+            <div class="cardbox">
+                <label class="labell">Phone Number</label>
+                <input placeholder="Enter Your Phone Number" required asp-for="Phonenumber" />
+            </div>
+
+            <div class="cardbox">
+                <label class="labell">Password</label>
+                <input placeholder="Enter Your Password" required asp-for="Password" onchange="checkpassword();" />
+            </div>
+
+            <div class="cardbox">
+                <label class="labell">Confirm Your Password</label>
+                <input placeholder="Confirm Your Password" required asp-for="Password" id="confirm" name="lol" onchange="checkpassword();" />
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+        <div class="buttonn">
+
+            <input  type="submit" value="Register" id="button" />
+
+
+        </div>
+
+
+
+    </form>
+
+
+</section>
+
+
+    <script>
+
+
+
+
+        function checkpassword() {
+
+            if (document.getElementById("Password").value === "" || document.getElementById("confirm").value === "")
+                return;
+
+
+            if (document.getElementById("Password").value === document.getElementById("confirm").value) {
+
+                let a = document.getElementById("button");
+                a.disabled = false;
+            }
+            else {
+                document.getElementById("button").disabled = true;
+                alert("wrong");
+
+            }
+                
+        
+
+        }
+        
+    </script>
+
+</body>
+</html>

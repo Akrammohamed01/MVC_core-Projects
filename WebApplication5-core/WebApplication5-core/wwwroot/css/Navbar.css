@@ -1,0 +1,46 @@
+﻿nav {
+    background-color: #4e5a66;
+    width: 100%;
+    height: 80px;
+    font-family: montserrat;
+}
+
+label.logo {
+
+    color:white;
+    font-size:35px;
+    line-height:80px;
+    padding-left:100px;
+    font-weight:bold;
+
+
+
+}
+
+nav ul {
+
+    float:right;
+    margin-right:20px;
+}
+    nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin-right:10px;
+    }
+
+ nav ul li a {
+    text-decoration: none;
+    color:white;
+    font-size:17px;
+    text-transform:uppercase;
+    padding:7px 13px;
+    border-radius:3px;
+}
+    nav ul li a:hover {
+        transition: .5s;
+        background-color: aqua;
+    }
+span {
+    color: #64d2f3;
+}
+

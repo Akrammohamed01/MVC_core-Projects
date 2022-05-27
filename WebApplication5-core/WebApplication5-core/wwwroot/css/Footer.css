@@ -1,0 +1,53 @@
+﻿.footer {
+    background-color: #eeedef;
+    font-weight: 400;
+    font-family: 'Segoe UI';
+    padding: 20px;
+    margin-top: 10px;
+}
+.social {
+    text-align:center;
+    margin-top:20px;
+}
+    .social a {
+        text-decoration: none;
+        font-size: 30px;
+        margin: 0 10px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 6px;
+        color: #7f7d80;
+    }
+
+.list {
+
+
+    text-align:center;
+    margin-top:20px;
+}
+.list li {
+    list-style:none;
+    display:inline-block;
+    margin-right:18px;
+
+
+}
+.list a {
+
+    text-decoration:none;
+    color:black;
+    font-weight:400;
+    opacity:0.75;
+}
+
+.social a:hover {
+    color: #0c2030;
+    transition: .5s;
+}
+
+.list a:hover {
+    color: black;
+opacity:1;
+
+
+}

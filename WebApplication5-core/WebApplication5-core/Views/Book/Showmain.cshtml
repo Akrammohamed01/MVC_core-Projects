@@ -1,0 +1,108 @@
+﻿@using WebApplication5_core.Models
+@model IEnumerable<WebApplication5_core.Models.Book>
+@{
+
+    Layout = "_Layout";
+
+}
+
+
+<section class="jumbotron text-center">
+
+    <div class="container">
+
+        <h1 class="h1" style="padding-top: 20px; color: #595b63; font-weight:bold;"> Welcome to BookX</h1>
+
+        <p class="lead text-muted">
+            Hello this the bookstore to buy and see a variety of books
+            Hello this the bookstore to buy and see a variety of booksHello this the bookstore to buy and see a variety of booksHello this the bookstore to buy and see a variety of books
+        </p>
+        <p>
+
+            <a href="#" class="btn btn-primary my-2"> Search books</a>
+
+        </p>
+
+
+
+    </div>
+
+
+
+</section>
+
+<h1 style="margin:7px">Top Books</h1>
+
+<section class="cont">
+
+
+    @foreach (Book a in Model)
+    {
+
+
+        <div class="c">
+
+            <div class="image" style="background-image: url(@a.Imglink);"></div>
+
+            <h2 class="title">@a.Name</h2>
+
+            <p class="text">
+
+            </p>
+
+
+            <a class="button" href="#">BOOK DETAILS</a>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    }
+
+
+
+
+</section>
+
+<footer class="footer">
+
+    <div class="social">
+
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="https://www.facebook.com/Akrammm0/" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-snapchat"></a>
+
+    </div>
+
+
+    <div class="list">
+
+        <ul>
+
+            <li><a asp-controller="Book" asp-action="Showmain">Home</a> </li>
+            <li><a asp-controller="Admin" asp-action="Aboutus">About us</a> </li>
+            <li><a href="#">Services</a> </li>
+            <li><a href="#">Terms</a> </li>
+            <li><a href="#">Privacy Policy</a> </li>
+
+
+
+        </ul>
+
+        <p class="copy-right">
+
+            Akram Mohamed @@ 2022
+        </p>
+
+
+    </div>
+</footer>
