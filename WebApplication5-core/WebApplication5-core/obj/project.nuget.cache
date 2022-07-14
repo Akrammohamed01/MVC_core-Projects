@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TOhSKKK368BF27k1esRmkwoCXkTobRMWGwdS4UVRUOROwB+kjCF3Kvaf+xaEMCghn0FWPruvLNvtz1lTltcqxQ==",
+  "dgSpecHash": "wSsC4zWqM97JmhOhU3iE/2qeXGMapht2WUrRHvWsqphHbbvOm5Sr47S1GrJMnZEk7sFcWUm4aWA3qL6tiDGJvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Akram\\source\\repos\\MVC_core-Projects\\WebApplication5-core\\WebApplication5-core\\WebApplication5-core.csproj",
+  "projectFilePath": "C:\\Users\\Akram\\source\\repos\\MVC_core-Projects\\WebApplication5-core\\WebApplication5-core\\Book_Store.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Akram\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Akram\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",

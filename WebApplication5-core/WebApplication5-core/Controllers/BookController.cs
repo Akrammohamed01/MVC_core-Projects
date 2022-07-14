@@ -18,11 +18,24 @@ namespace WebApplication5_core.Controllers
         public IActionResult Showmain()
         {
 
-            BookstoreContext b = new BookstoreContext();
+            BookstoreContext database = new BookstoreContext();
 
-                List<Book> s=b.Books.Where(a => a.Scount >= 10).ToList();
+                List<Book> s=database.Books.Where(a => a.Scount >= 10).ToList();
 
             return View(s);
+        }
+
+
+        public IActionResult Details(int ID) {
+
+
+            BookstoreContext database = new BookstoreContext();
+
+
+            Book b1 =database.Books.FirstOrDefault(a => a.Id == ID);
+            b1.Author = database.Authors.FirstOrDefault(a => a.Id == b1.AuthorId);
+
+            return View(b1);
         }
 
         public IActionResult Privacy()

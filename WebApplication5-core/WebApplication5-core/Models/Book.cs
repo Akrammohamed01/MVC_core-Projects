@@ -31,8 +31,5 @@ namespace WebApplication5_core.Models
         [ForeignKey(nameof(AuthorId))]
         [InverseProperty("Books")]
         public virtual Author Author { get; set; }
-        [ForeignKey(nameof(Categoryname))]
-        [InverseProperty(nameof(Category.Books))]
-        public virtual Category CategorynameNavigation { get; set; }
     }
 }

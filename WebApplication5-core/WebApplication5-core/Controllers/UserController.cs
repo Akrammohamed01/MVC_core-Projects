@@ -12,6 +12,8 @@ namespace WebApplication5_core.Controllers
 {
     public class UserController : Controller
     {
+
+
         public IActionResult Login()
         {
             return View();
@@ -19,18 +21,43 @@ namespace WebApplication5_core.Controllers
 
 
         [HttpPost]
+        public IActionResult Login(string Email,string Password) {
+
+            HashAlgorithm sha = SHA256.Create();
+            BookstoreContext database = new BookstoreContext();
+
+           byte[]arr= sha.ComputeHash(Encoding.ASCII.GetBytes(Password));
+
+
+            Registeration s=database.Registerations.FirstOrDefault(a => a.Email == Email && a.Password == Encoding.Default.GetString(arr));
+
+            if (s != null)
+                return RedirectToAction("Showmain", "Book");
+            else
+                return View("Loginerror");
+
+
+
+
+        }
+
+
+        [HttpPost]
         //to handle the request coming from the user
-        public void Register(Registeration reg)
+        public IActionResult Register(Registeration reg)
         {
 
             HashAlgorithm sha = SHA256.Create();
-            BookstoreContext c = new BookstoreContext();
+            BookstoreContext database = new BookstoreContext();
             Registeration s = new Registeration();
 
+
+            if (database.Registerations.FirstOrDefault(a => a.Email == reg.Email) != null)
+                return View("Registererror");
             
 
-            if (c.Registerations.Count() >= 1) {
-                List<Registeration> m = c.Registerations.ToList();
+            if (database.Registerations.Count() >= 1) {
+                List<Registeration> m = database.Registerations.ToList();
                 s.Id = m[m.Count - 1].Id + 1;
 
 
@@ -46,8 +73,9 @@ namespace WebApplication5_core.Controllers
 
             byte[]arr=sha.ComputeHash(Encoding.ASCII.GetBytes(reg.Password));
             s.Password=Encoding.Default.GetString(arr);
-            c.Registerations.Add(s);
-            c.SaveChanges();
+            database.Registerations.Add(s);
+            database.SaveChanges();
+            return RedirectToAction("Login");
 
         }
 

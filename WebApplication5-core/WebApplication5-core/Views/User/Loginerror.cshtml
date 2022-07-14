@@ -1,0 +1,72 @@
+﻿@using WebApplication5_core.Models
+@model Registeration
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+
+    <link href="~/css/login.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+
+
+
+
+    <section class="containerr">
+
+        <div class="head">Sign in</div>
+
+
+        <form method="post" asp-controller="User" asp-action="Login">
+
+            <div class="card-details">
+
+
+                <div class="cardbox">
+                    <label class="labell">Email</label>
+                    <input placeholder="Enter Your Email" required name="Email" type="email" onchange="check();"/>
+                </div>
+
+
+                <div class="cardbox">
+                    <label class="labell">Password</label>
+                    <input placeholder="Enter Your Password" required type="password" name="Password" onchange="check();" />
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+            <div class="buttonn">
+
+                <input type="submit" value="Login" id="button" />
+
+
+            </div>
+
+
+
+        </form>
+
+        <h4 id="m" style="color:black">Email or password is incorrect</h4>
+    </section>
+
+
+    <script>
+
+        function check() {
+
+            document.getElementById("m").style.display = "none";
+
+        }
+
+    </script>
+</body>
+</html>

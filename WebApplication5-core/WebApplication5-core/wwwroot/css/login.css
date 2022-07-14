@@ -1,2 +1,95 @@
 ﻿body {
+    background-color: #34ae8c;
+    height: 100vh;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
+.containerr {
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+}
+
+    .containerr .head {
+        font-size: 25px;
+        font-weight: bold;
+        position: relative;
+        text-align: center;
+        padding-bottom: 30px;
+        color: #39a791
+    }
+
+        .containerr .head::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            background: #39a791;
+        }
+
+    .containerr .card-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+        grid-row-gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+        .containerr .card-details .labell {
+            display: block;
+            margin-bottom: 5px;
+            color: #757588
+        }
+
+        .containerr .card-details .cardbox {
+            margin-right: 20px;
+        }
+
+            .containerr .card-details .cardbox input {
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid white;
+                font-size: 16px;
+                color: #999999;
+                padding: 15px;
+                border-bottom-width: 2px;
+                transition: all 0.3s ease;
+                background-color: #e7e9e9;
+            }
+
+form .buttonn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    form .buttonn input {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 50%;
+        height: 100%;
+        color: white;
+        background-color: #39a791;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        outline-color: none;
+        border-color: #39a791;
+    }
+
+        form .buttonn input:hover {
+            cursor: pointer;
+            transition: 0.5s;
+            color: black;
+        }

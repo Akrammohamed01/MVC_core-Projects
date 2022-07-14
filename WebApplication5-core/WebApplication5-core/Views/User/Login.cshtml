@@ -1,0 +1,62 @@
+﻿@using WebApplication5_core.Models
+@model Registeration
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+
+    <link href="~/css/login.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+
+
+
+
+    <section class="containerr">
+
+        <div class="head">Sign in</div>
+
+
+        <form method="post" asp-controller="User" asp-action="Login">
+
+            <div class="card-details">
+
+              
+                <div class="cardbox">
+                    <label class="labell">Email</label>
+                    <input placeholder="Enter Your Email" required name="Email" type="email" />
+                </div>
+
+
+                <div class="cardbox">
+                    <label class="labell">Password</label>
+                    <input placeholder="Enter Your Password" required name="Password"  type="password"  />
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+            <div class="buttonn">
+
+                <input type="submit" value="Login" id="button" />
+
+
+            </div>
+
+
+
+        </form>
+
+
+    </section>
+
+
+</body>
+</html>

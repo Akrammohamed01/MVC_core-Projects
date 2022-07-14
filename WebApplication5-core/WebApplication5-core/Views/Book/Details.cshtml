@@ -1,0 +1,49 @@
+﻿@model Book
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title></title>
+
+    <link href="~/css/Details.css" rel="stylesheet" />
+</head>
+<body>
+
+
+
+ <section class="cont">
+
+     <div class="image" style="background-image:url(@Model.Imglink)">
+
+        
+
+     </div>
+
+     <div class="Details">
+
+         <div class="title">
+             <h3>@Model.Name:</h3>
+
+             <h4>@Model.Author.AuthorName</h4>
+         </div>
+         <div class="discription">
+
+             @Model.Description
+         </div>
+
+         <div class="button">
+
+             <a href="#">Download</a>
+         </div>
+
+
+     </div>
+
+
+
+ </section>
+
+</body>
+</html>

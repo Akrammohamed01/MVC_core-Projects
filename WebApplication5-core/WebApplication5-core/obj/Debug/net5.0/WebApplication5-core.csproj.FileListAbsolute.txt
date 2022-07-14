@@ -82,4 +82,8 @@ C:\Users\Akram\source\repos\MVC_core-Projects\WebApplication5-core\WebApplicatio
 C:\Users\Akram\source\repos\MVC_core-Projects\WebApplication5-core\WebApplication5-core\obj\Debug\net5.0\Razor\Views\Admin\_ViewImports.cshtml.g.cs
 C:\Users\Akram\source\repos\MVC_core-Projects\WebApplication5-core\WebApplication5-core\obj\Debug\net5.0\Razor\Views\User\_ViewImports.cshtml.g.cs
 C:\Users\Akram\source\repos\MVC_core-Projects\WebApplication5-core\WebApplication5-core\obj\Debug\net5.0\Razor\Views\User\Register.cshtml.g.cs
+C:\Users\Akram\source\repos\MVC_core-Projects\WebApplication5-core\WebApplication5-core\obj\Debug\net5.0\Razor\Views\User\Login.cshtml.g.cs
+C:\Users\Akram\source\repos\MVC_core-Projects\WebApplication5-core\WebApplication5-core\obj\Debug\net5.0\Razor\Views\User\Loginerror.cshtml.g.cs
+C:\Users\Akram\source\repos\MVC_core-Projects\WebApplication5-core\WebApplication5-core\obj\Debug\net5.0\Razor\Views\User\Registererror.cshtml.g.cs
+C:\Users\Akram\source\repos\MVC_core-Projects\WebApplication5-core\WebApplication5-core\obj\Debug\net5.0\Razor\Views\Book\Details.cshtml.g.cs
 C:\Users\Akram\source\repos\MVC_core-Projects\WebApplication5-core\WebApplication5-core\obj\Debug\net5.0\WebApplication5-core.csproj.AssemblyReference.cache

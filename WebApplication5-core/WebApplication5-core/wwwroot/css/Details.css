@@ -1,0 +1,20 @@
+﻿
+.cont {
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.Details{
+    display:inline-block;
+    
+}
+
+
+
+.image  {
+
+    
+
+}
+

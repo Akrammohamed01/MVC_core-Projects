@@ -18,6 +18,7 @@
     <section class="containerr">
 
         <div class="head">Sign up</div>
+        <h3 id="o" style="color:red">This Email already registered</h3>
         <h3 id="a" style="color:red;">The password doesnt match</h3>
 
 
@@ -27,31 +28,31 @@
 
                 <div class="cardbox">
                     <label class="labell"> Firstname</label>
-                    <input placeholder="Enter Your First Name" required asp-for="Firstname" />
+                    <input placeholder="Enter Your First Name" required asp-for="Firstname" onchange="hide();" />
                 </div>
 
                 <div class="cardbox">
                     <label class="labell">Lastname</label>
-                    <input placeholder="Enter Your Last Name" required asp-for="Lastname" />
+                    <input placeholder="Enter Your Last Name" required asp-for="Lastname" onchange="hide();" />
                 </div>
                 <div class="cardbox">
                     <label class="labell">Email</label>
-                    <input placeholder="Enter Your Email" required name="Email" type="email" />
+                    <input placeholder="Enter Your Email" required name="Email" type="email" onchange="hide();" />
                 </div>
 
                 <div class="cardbox">
                     <label class="labell">Phone Number</label>
-                    <input placeholder="Enter Your Phone Number" required asp-for="Phonenumber" />
+                    <input placeholder="Enter Your Phone Number" required asp-for="Phonenumber" onchange="hide();" />
                 </div>
 
                 <div class="cardbox">
                     <label class="labell">Password</label>
-                    <input placeholder="Enter Your Password" required type="password" name="Password" id="Password"  onchange="checkpassword();" />
+                    <input placeholder="Enter Your Password" required asp-for="Password" type="password" onchange="checkpassword(); hide();" />
                 </div>
 
                 <div class="cardbox">
                     <label class="labell">Confirm Your Password</label>
-                    <input placeholder="Confirm Your Password" required asp-for="Password" type="password"  id="confirm" onchange="checkpassword();" />
+                    <input placeholder="Confirm Your Password" required asp-for="Password" type="password"  id="confirm" name="lol" onchange="checkpassword(); hide();" />
                 </div>
 
 
@@ -83,7 +84,6 @@
 
         document.getElementById("a").style.display = "none";
 
-
         function checkpassword() {
 
             if (document.getElementById("Password").value === "" || document.getElementById("confirm").value === "")
@@ -102,12 +102,16 @@
 
             }
 
-        
+
 
         }
 
-   
+        function hide() {
         
+            document.getElementById("o").style.display = "none";
+
+        }
+
     </script>
 
 </body>
